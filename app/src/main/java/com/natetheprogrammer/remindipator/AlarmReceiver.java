@@ -5,10 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-/**
- * Created by Jaison on 17/06/17.
- */
-
 public class AlarmReceiver extends BroadcastReceiver {
 
     String TAG = "AlarmReceiver";
@@ -33,5 +29,9 @@ public class AlarmReceiver extends BroadcastReceiver {
         NotificationScheduler.showNotification(context, MainActivity.class,
                 "You have 5 unwatched videos", "Watch them now?");
 
+    }
+    
+    public static Class getARClass() {
+        return AlarmReceiver.class;
     }
 }

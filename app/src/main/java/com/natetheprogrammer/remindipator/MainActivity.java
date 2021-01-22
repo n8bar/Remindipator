@@ -66,11 +66,11 @@ public class MainActivity extends AppCompatActivity {
                 localData.setReminderStatus(isChecked);
                 if (isChecked) {
                     Log.d(TAG, "onCheckedChanged: true");
-                    NotificationScheduler.setReminder(MainActivity.this, AlarmReceiver.class, localData.get_hour(), localData.get_min());
+                    NotificationScheduler.setReminder(MainActivity.this, AlarmReceiver.getARClass(), localData.get_hour(), localData.get_min());
                     ll_set_time.setAlpha(1f);
                 } else {
                     Log.d(TAG, "onCheckedChanged: false");
-                    NotificationScheduler.cancelReminder(MainActivity.this, AlarmReceiver.class);
+                    NotificationScheduler.cancelReminder(MainActivity.this, AlarmReceiver.getARClass());
                     ll_set_time.setAlpha(0.4f);
                 }
 
