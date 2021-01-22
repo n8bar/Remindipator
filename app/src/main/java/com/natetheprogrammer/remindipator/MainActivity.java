@@ -22,7 +22,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    String TAG = "RemindMe";
+    String TAG = "Remindipate";
     LocalData localData;
 
     SwitchCompat reminderSwitch;

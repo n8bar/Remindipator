@@ -3,10 +3,6 @@ package com.natetheprogrammer.remindipator;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-/**
- * Created by Jaison on 18/06/17.
- */
-
 public class LocalData {
 
     private static final String APP_SHARED_PREFS = "RemindMePref";
@@ -44,8 +40,7 @@ public class LocalData {
         return appSharedPrefs.getInt(hour, 20);
     }
 
-    public void set_hour(int h)
-    {
+    public void set_hour(int h)    {
         prefsEditor.putInt(hour, h);
         prefsEditor.commit();
     }

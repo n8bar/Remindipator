@@ -22,8 +22,7 @@ public class NotificationScheduler {
     public static final int DAILY_REMINDER_REQUEST_CODE=100;
     public static final String TAG="NotificationScheduler";
 
-    public static void setReminder(Context context,Class<?> cls,int hour, int min)
-    {
+    public static void setReminder(Context context,Class<?> cls,int hour, int min)     {
         Calendar calendar = Calendar.getInstance();
 
         Calendar setcalendar = Calendar.getInstance();
